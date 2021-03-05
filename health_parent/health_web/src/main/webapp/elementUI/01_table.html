@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格入门案例</title>
+    <link rel="stylesheet" href="../plugins/elementui/index.css">
+    <script src="../js/vue.js"></script>
+    <script src="../plugins/elementui/index.js"></script>
+</head>
+<body>
+    <div id="app">
+       <el-button type="success" @click="visible = true">Button</el-button>
+       <el-dialog :visible.sync="visible" title="Hello World">
+           <p>Try Element</p>
+       </el-dialog>
+    </div>
+    <script>
+        var vue  = new vue({
+           el:'#app',
+           data:{
+               //数据双向绑定，变量声明
+                visible:false
+           },
+            create(){
+               //Vue对象创建后执行
+
+            },
+            mounted(){
+               //挂载后
+            },
+            method:{
+               //定义方法
+
+            }
+        });
+    </script>
+</body>
+</html>
